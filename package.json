@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+  "engines": {
+    "node": ">=14.0.0"
   },
-  "keywords": [],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "vercel-build": "echo hello"
+  },
+  "keywords": ["api", "express", "vercel"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Simple API backend deployed on Vercel",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
